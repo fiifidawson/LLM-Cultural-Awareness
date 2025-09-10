@@ -2,8 +2,9 @@
 
 This project evaluates the cultural awareness of Large Language Models (LLMs) across different languages.
 
+**Note:**
 ```
-**Note:** This repository contains a streamlined and modularized version of the original
+This repository contains a streamlined and modularized version of the original
 evaluation framework, which was initially  developed and  tested on Google Colab.
 The current  implementation has been restructured for better  maintainability,
 readability, and deployment flexibility while preserving all core functionality
