@@ -1,7 +1,10 @@
 # LLM Cultural Awareness Evaluation
 
-This project evaluates the cultural awareness of Large Language Models (LLMs) across different languages, based on the research paper: "Evaluating Cultural Awareness of LLMs for Yoruba, Malayalam, and English".
+This project evaluates the cultural awareness of Large Language Models (LLMs) across different languages.
 
+```
+Note: This repository contains a streamlined and modularized version of the original evaluation framework, which was initially developed and tested on Google Colab. The current implementation has been restructured for better maintainability, readability, and deployment flexibility while preserving all core functionality and achieving identical results. Please note that results may differ depending on the model version used or due to the inherent unpredictability of responses. We are open to discussions and clarifications.
+```
 ## Overview
 
 The evaluation framework assesses how well LLMs understand and respond to cultural dimensions across three languages:
@@ -17,18 +20,6 @@ The framework evaluates six cultural dimensions based on Hofstede's cultural the
 - **LTO** (Long-term vs Short-term Orientation)
 - **IVR** (Indulgence vs Restraint)
 
-## Project Structure
-
-```
-project/
-├── config.py              # Configuration and constants
-├── data_loader.py          # Data loading utilities
-├── cultural_evaluator.py   # Core evaluation logic
-├── results_analyzer.py     # Results analysis and reporting
-├── main.py                # Main evaluation script
-├── requirements.txt       # Project dependencies
-└── README.md             # This file
-```
 
 ## Installation
 
@@ -143,27 +134,6 @@ The evaluation generates:
 2. **Cached Scores**: Stored in JSON for efficient re-runs
 3. **Final Results**: Comprehensive analysis saved to file
 
-### Sample Output
-```
-ENGLISH RESULTS:
---------------------------------------------------
-PDI : GT=0.400, Computed=0.425, Diff=0.025, Similarity=0.976
-IDV : GT=0.600, Computed=0.580, Diff=0.020, Similarity=0.981
-MAS : GT=0.620, Computed=0.640, Diff=0.020, Similarity=0.981
-UAI : GT=0.460, Computed=0.445, Diff=0.015, Similarity=0.985
-LTO : GT=0.500, Computed=0.490, Diff=0.010, Similarity=0.990
-IVR : GT=0.680, Computed=0.700, Diff=0.020, Similarity=0.981
-
-Overall Similarity Score: 0.9823
-```
-
-## Key Features
-
-- **Caching System**: Avoids re-computation of expensive API calls
-- **Error Handling**: Robust error handling with fallback mechanisms
-- **Multi-language Support**: Native support for English, Malayalam, and Yoruba
-- **Configurable Parameters**: Easy adjustment of evaluation parameters
-- **Comprehensive Analysis**: Detailed reporting and comparison tools
 
 ## Customization
 
@@ -198,17 +168,3 @@ This project is provided for research and educational purposes. Please cite the 
 **API Key Error**: Ensure your OpenAI API key is properly set
 **Data Path Error**: Verify your data paths exist and contain JSON files
 **Permission Error**: Check file permissions for cache and output directories
-
-### Getting Help
-
-1. Check the console output for specific error messages
-2. Verify your data format matches the expected JSON structure
-3. Ensure all dependencies are installed correctly
-
-## Contributing
-
-When contributing to this project:
-1. Follow the existing code structure
-2. Add appropriate error handling
-3. Update documentation for new features
-4. Test with sample data before submitting
