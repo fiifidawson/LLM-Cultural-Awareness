@@ -11,7 +11,7 @@ OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', 'your-api-key-here')
 MODEL_NAME = "gpt-4o-mini"
 
 # File Paths
-BASE_DATA_PATH = '/link/to/base/path/CDEval_Data'
+BASE_DATA_PATH = './data'
 CACHE_FILE = os.path.join(BASE_DATA_PATH, 'computed_scores', 'computed_scores_openai.json')
 RESULTS_FILE = os.path.join(BASE_DATA_PATH, 'final_results.json')
 

@@ -5,7 +5,6 @@ Based on the research paper: "Evaluating Cultural Awareness of LLMs for Yoruba, 
 
 import os
 from typing import Dict, Any
-from google.colab import drive
 
 # Import custom modules
 import config
@@ -17,12 +16,13 @@ def setup_environment():
     """Setup the evaluation environment"""
     print("Setting up evaluation environment...")
     
-    # Mount Google Drive
-    try:
-        drive.mount('/content/drive')
-        print("✓ Google Drive mounted successfully")
-    except Exception as e:
-        print(f"Warning: Could not mount Google Drive: {e}")
+    # Verify data directories exist
+    for language, path in config.LANGUAGE_PATHS.items():
+        if not os.path.exists(path):
+            print(f"⚠️  Warning: Data directory for {language} not found: {path}")
+            print(f"    Please ensure your data is placed in the correct directory structure")
+        else:
+            print(f"✓ {language} data directory found")
     
     # Verify API key
     if config.OPENAI_API_KEY == 'your-api-key-here':
