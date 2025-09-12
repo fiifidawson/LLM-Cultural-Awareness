@@ -1,6 +1,9 @@
 # LLM Cultural Awareness Evaluation
 
 This research evaluates the cultural awareness of Large Language Models (LLMs) across different languages.
+<div align="center">
+    <img src="assets/architecture.png" alt=" Logo" width="480" height="270">
+</div>
 
 **Note:** This repository contains a streamlined and modularized version of the original evaluation framework, which was initially  developed and  tested on Google Colab. The current  implementation has been restructured for better  maintainability, and readability while preserving all core functionality and achieving  identical results. 
 
@@ -8,10 +11,18 @@ Please note that results may differ  depending on the model version used or due 
 
 ## Overview
 
+<div align="center">
+    <img src="assets/geography.png" alt=" Logo" width="480" height="270">
+</div>
+
 The evaluation framework assesses how well LLMs understand and respond to cultural dimensions across three languages:
 - **English**
 - **Malayalam** 
 - **Yoruba**
+
+<div align="center">
+    <img src="assets/dimension.png" alt=" Logo" width="480" height="270">
+</div>
 
 The framework evaluates six cultural dimensions based on Hofstede's cultural theory:
 - **PDI** (Power Distance Index)
@@ -20,7 +31,6 @@ The framework evaluates six cultural dimensions based on Hofstede's cultural the
 - **UAI** (Uncertainty Avoidance Index)
 - **LTO** (Long-term vs Short-term Orientation)
 - **IVR** (Indulgence vs Restraint)
-
 
 ## Installation
 
