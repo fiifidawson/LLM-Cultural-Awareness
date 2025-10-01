@@ -179,3 +179,10 @@ This project is provided for research and educational purposes. Please cite the 
 - **API Key Error**: Ensure your OpenAI API key is properly set
 - **Data Path Error**: Verify your data paths exist and contain JSON files
 - **Permission Error**: Check file permissions for cache and output directories
+
+## Authors
+- Raj Dandekar
+- Sahil Pocker
+- Zainab Hassan
+- Fiifi Dawson
+- Sreedath Panat
